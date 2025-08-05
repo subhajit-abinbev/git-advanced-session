@@ -9,7 +9,8 @@ Basic Setup
 2. Create a branch in the repo <https://github.com/subhajit-abinbev/git-advanced-session> and clone it
    git clone https://github.com/subhajit-abinbev/git-advanced-session.git
    git checkout <your-branch-name>
-   ###########################################################################################################
+
+###########################################################################################################
 
 ###########################################################################################################
 Git Ignore
@@ -20,28 +21,33 @@ Git Ignore
 4. Remove the cache (git rm --cached <file>)
 5. Modify the .env file and check status again. (Will be shared over chat)
 6. Push all the changes to your branch
-   ###########################################################################################################
+
+###########################################################################################################
 
 ###########################################################################################################
 Pre-Commit Hooks
 
-1. Lets add some files with secrets. Lets try to commit them. (Will be shared over chat)
+1. Lets add some files (python notebook + python file) with secrets. (Will be shared over chat)
 
-2. Lets add a notebook where we smartly read values from .env file. Now, lets run the notebook. (Will be shared over chat)
+2. A notebook is already added (env_secrets_demo) where we smartly read values from .env file. Now, lets run the notebook. (Will be shared over chat)
 
 3. Lets add a file over 1 MB. (Will be shared over chat)
 
-4. Now lets reset
+4. Lets try to commit these files.
+
+5. Now lets reset
    git reset --hard origin/main
 
-5. Steps to install pre-commit hooks:
+6. Steps to install pre-commit hooks:
    pre-commit install
 
-6. Lets add the files and try to commit them again.
-   ###########################################################################################################
+7. Lets add the files and try to commit them again.
+
+###########################################################################################################
 
 ###########################################################################################################
 Pytest
 
 1. bla bla bla
-   ###########################################################################################################
+
+###########################################################################################################
