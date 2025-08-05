@@ -1,0 +1,36 @@
+# Core Data Science Libraries
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Web and API Libraries
+requests>=2.31.0
+
+# Environment and Configuration
+python-dotenv>=1.0.0
+PyYAML>=6.0
+
+# Development and Testing Tools
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Pre-commit and Code Quality
+pre-commit>=3.3.0
+
+# Jupyter and Notebook Tools
+jupyter>=1.0.0
+ipykernel>=6.25.0
+nbstripout>=0.7.1
+
+# Security Tools
+detect-secrets>=1.4.0
+
+# Documentation and Formatting
+black>=23.7.0
+flake8>=6.0.0
+isort>=5.12.0
+
+# Optional: Additional utilities that might be useful for the session
+gitpython>=3.1.0  # For programmatic git operations
+rich>=13.0.0      # For better terminal output formatting
+click>=8.1.0      # For CLI development
