@@ -4,11 +4,11 @@ Basic Setup
 1. Follow these steps to create a new conda environment for live testing:
    conda create -n git-demo python=3.11 -y
    conda activate git-demo
-   pip install requirements.txt
 
 2. Create a branch in the repo <https://github.com/subhajit-abinbev/git-advanced-session> and clone it
    git clone https://github.com/subhajit-abinbev/git-advanced-session.git
    git checkout <your-branch-name>
+   pip install requirements.txt
 
 ###########################################################################################################
 
