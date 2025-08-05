@@ -28,17 +28,20 @@ git check-ignore .env
 ## Key Learning Points
 
 ### ✅ Best Practices
+
 - Always add `.env` files to `.gitignore` BEFORE creating them
 - Use `.env.example` to document required environment variables
 - Review `.gitignore` patterns regularly
 - Use `git check-ignore <file>` to test ignore rules
 
 ### ❌ What NOT to Do
+
 - Never commit files containing real API keys, passwords, or secrets
 - Don't ignore `.env.example` files (these should be committed)
 - Avoid overly broad ignore patterns that might hide important files
 
 ### 🛡️ Security Benefits
+
 - Prevents accidental exposure of sensitive data
 - Protects API keys and database credentials
 - Maintains clean repository history
@@ -55,6 +58,7 @@ git check-ignore .env
 ## Common Scenarios to Demo
 
 ### Scenario 1: Accidental Commit Prevention
+
 ```bash
 # Try to add .env (will be ignored)
 git add .env
@@ -65,6 +69,7 @@ git add .env.example
 ```
 
 ### Scenario 2: Testing Ignore Rules
+
 ```bash
 # Test if files would be ignored
 git check-ignore .env          # Returns: .env (ignored)
@@ -73,6 +78,7 @@ git check-ignore secrets.yaml  # Returns: secrets.yaml (ignored)
 ```
 
 ### Scenario 3: Viewing All Ignored Files
+
 ```bash
 # See all files being ignored
 git status --ignored --porcelain | grep "^!!"

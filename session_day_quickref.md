@@ -3,6 +3,7 @@
 ## 🚀 Session Day Commands (Keep This Open!)
 
 ### Before We Start
+
 ```bash
 # Navigate to project
 cd git-advanced-session
@@ -94,6 +95,7 @@ pytest
 ## 🔧 Useful Git Commands During Session
 
 ### Navigation & Information
+
 ```bash
 git status                    # Current state
 git log --oneline            # Commit history
@@ -104,6 +106,7 @@ git diff --staged            # Staged changes
 ```
 
 ### Branch Operations
+
 ```bash
 git branch                   # List branches
 git branch -a               # List all branches
@@ -113,6 +116,7 @@ git merge <branch>          # Merge branch
 ```
 
 ### Troubleshooting
+
 ```bash
 git reset --hard HEAD       # Discard all changes
 git clean -fd               # Remove untracked files
@@ -126,6 +130,7 @@ git stash pop               # Restore stashed changes
 ## 🛑 Emergency Commands (If You Get Lost)
 
 ### Reset to Clean State
+
 ```bash
 # Nuclear option - start fresh
 git reset --hard origin/main
@@ -133,11 +138,13 @@ git clean -fd
 ```
 
 ### If Merge Goes Wrong
+
 ```bash
 git merge --abort           # Cancel merge
 ```
 
 ### If Rebase Goes Wrong
+
 ```bash
 git rebase --abort          # Cancel rebase
 ```
@@ -147,11 +154,13 @@ git rebase --abort          # Cancel rebase
 ## 💡 Editor Tips
 
 ### VS Code
+
 - `Ctrl+Shift+G` - Git panel
 - `Ctrl+Shift+P` → "Git: " for Git commands
 - Click line numbers to see git blame
 
 ### Command Line Git
+
 - `q` to exit git log/diff
 - `Space` to scroll down in git log
 - `Ctrl+C` to cancel current command
@@ -161,6 +170,7 @@ git rebase --abort          # Cancel rebase
 ## 📁 Key Files to Watch
 
 During the session, pay attention to these files:
+
 - `.gitignore` - What gets ignored
 - `.pre-commit-config.yaml` - Hook configuration
 - `config/app_config.py` - Merge conflict demo
@@ -173,14 +183,16 @@ During the session, pay attention to these files:
 ## 🎯 Session Agenda Tracker
 
 ### ✅ Part 1: Pre-Commit (45 min)
+
 - [ ] .gitignore demonstration
 - [ ] File size limit hook
-- [ ] Secrets detection hook  
+- [ ] Secrets detection hook
 - [ ] Notebook output stripping
 - [ ] Code formatting hooks
 - [ ] Test integration
 
 ### ✅ Part 2: Post-Commit (75 min)
+
 - [ ] Creating merge conflicts
 - [ ] Resolving merge conflicts
 - [ ] Interactive rebase
@@ -189,6 +201,7 @@ During the session, pay attention to these files:
 - [ ] Pull request workflow
 
 ### ✅ Part 3: Best Practices (20 min)
+
 - [ ] Team workflow discussion
 - [ ] Code review guidelines
 - [ ] Branch naming conventions

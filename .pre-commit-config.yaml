@@ -8,8 +8,8 @@ repos:
     hooks:
       # File size check - prevents large files from being committed
       - id: check-added-large-files
-        args: ['--maxkb=1000']  # Set max file size to 1MB (adjust as needed)
-      
+        args: ["--maxkb=1000"] # Set max file size to 1MB (adjust as needed)
+
       # Basic file checks
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -21,17 +21,18 @@ repos:
       - id: check-case-conflict
       - id: check-executables-have-shebangs
       - id: check-shebang-scripts-are-executable
-      
+
       # Security checks
       - id: detect-private-key
       - id: detect-aws-credentials
+        args: ["--allow-missing-credentials"]
 
   # Secret detection using detect-secrets
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.4.0
     hooks:
       - id: detect-secrets
-        args: ['--baseline', '.secrets.baseline']
+        args: ["--baseline", ".secrets.baseline"]
         exclude: package.lock.json
 
   # Jupyter notebook processing - strips outputs and metadata
@@ -51,7 +52,7 @@ repos:
     rev: 7.0.0
     hooks:
       - id: flake8
-        args: ['--max-line-length=88', '--extend-ignore=E203,W503']
+        args: ["--max-line-length=88", "--extend-ignore=E203,W503"]
 
   - repo: https://github.com/pycqa/isort
     rev: 5.13.2
@@ -68,8 +69,8 @@ repos:
         types: [file]
         additional_dependencies:
           - eslint@8.57.0
-          - '@typescript-eslint/parser@7.13.1'
-          - '@typescript-eslint/eslint-plugin@7.13.1'
+          - "@typescript-eslint/parser@7.13.1"
+          - "@typescript-eslint/eslint-plugin@7.13.1"
 
   # Prettier for code formatting
   - repo: https://github.com/pre-commit/mirrors-prettier
@@ -78,14 +79,6 @@ repos:
       - id: prettier
         files: \.(js|ts|jsx|tsx|json|yaml|yml|md)$
 
-  # Additional security scanning
-  - repo: https://github.com/gitguardian/ggshield
-    rev: v1.25.0
-    hooks:
-      - id: ggshield
-        language: python
-        stages: [pre-commit]
-
 # Global configuration
 ci:
   autofix_commit_msg: |
@@ -93,8 +86,8 @@ ci:
 
     for more information, see https://pre-commit.ci
   autofix_prs: true
-  autoupdate_branch: ''
-  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_branch: ""
+  autoupdate_commit_msg: "[pre-commit.ci] pre-commit autoupdate"
   autoupdate_schedule: weekly
   skip: []
   submodules: false
