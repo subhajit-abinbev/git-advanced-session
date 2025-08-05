@@ -7,7 +7,7 @@ This demonstration shows how `.gitignore` prevents sensitive files from being ac
 1. **`.env`** - Contains fake environment variables and API keys (NEVER commit this!)
 2. **`.env.example`** - Template showing the structure without sensitive values (safe to commit)
 3. **`.gitignore`** - Comprehensive ignore rules to prevent sensitive files from being tracked
-4. **`scripts/gitignore_demo.py`** - Demonstration script showing how gitignore works
+4. **`scripts/gitignore_demo.py`** - Demonstration script that shows how gitignore works
 
 ## Running the Demo
 
