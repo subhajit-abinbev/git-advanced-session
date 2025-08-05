@@ -5,10 +5,10 @@ Basic Setup
    conda create -n git-demo python=3.11 -y
    conda activate git-demo
 
-2. Create a branch in the repo <https://github.com/subhajit-abinbev/git-advanced-session> and clone it
-   git clone https://github.com/subhajit-abinbev/git-advanced-session.git
-   git checkout <your-branch-name>
-   pip install requirements.txt
+2. git clone https://github.com/subhajit-abinbev/git-advanced-session.git
+   Change the path directory to git-advanced-session (press tab after cd)
+   Create a branch in your local (git checkout -b <your-branch-name>)
+   pip install -r requirements.txt
 
 ###########################################################################################################
 
