@@ -20,7 +20,6 @@ Git Ignore
 3. Modify the .gitignore file (Will be shared over chat)
 4. Remove the cache (git rm --cached <file>)
 5. Modify the .env file and check status again. (Will be shared over chat)
-6. Push all the changes to your branch
 
 ###########################################################################################################
 
@@ -37,6 +36,7 @@ Pre-Commit Hooks
 
 5. Now lets reset
    git reset --hard origin/main
+   Lets add the files shared over chat again
 
 6. Steps to install pre-commit hooks:
    pre-commit install
