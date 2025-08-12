@@ -115,9 +115,17 @@ def divide(a: Number, b: Number) -> Number:
         >>> divide(7, 2)
         3.5
     """
-    if b == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
-    return a / b
+    try:
+        if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+            raise TypeError("Both arguments must be numbers (int or float)")
+
+        logger.info(f"Dividing {a} by {b}")
+        if b == 0:
+            raise ZeroDivisionError("Cannot divide by zero")
+        return a / b
+    except Exception as e:
+        logger.error(f"Error in divide function: {e}")
+        raise
 
 
 def power(base: Number, exponent: Number) -> Number:
@@ -137,6 +145,7 @@ def power(base: Number, exponent: Number) -> Number:
         >>> power(4, 0.5)
         2.0
     """
+    logger.info(f"Raising {base} to the power of {exponent}")
     return base ** exponent
 
 
