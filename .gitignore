@@ -113,5 +113,3 @@ docs/_build/
 # Local development files
 local_settings.py
 settings_local.py
-
-git_essentials/
