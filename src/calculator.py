@@ -64,11 +64,12 @@ def subtract(a: Number, b: Number) -> Number:
         8.0
     """
     try:
-        logger.info(f"Subtracting {b} from {a}")
+        logger.info(f"Subtracting {a} from {b}")
         return a - b
     except Exception as e:
         logger.error(f"Error in subtract function: {e}")
         raise
+
 
 
 def multiply(a: Number, b: Number) -> Number:
