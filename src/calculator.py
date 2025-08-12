@@ -32,8 +32,8 @@ def add(a: Number, b: Number) -> Number:
     Examples:
         >>> add(2, 3)
         5
-        >>> add(2.5, 1.5)
-        4.0
+        >>> add(2+3j, 1+2j)
+        (3+5j)
     """
     try:
         if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
