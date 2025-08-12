@@ -32,8 +32,8 @@ def add(a: Number, b: Number) -> Number:
     Examples:
         >>> add(2, 3)
         5
-        >>> add(2.5, 1.5)
-        4.0
+        >>> add(1+2j, 3+4j)
+        (4+6j)
     """
     try:
         if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
@@ -63,7 +63,15 @@ def subtract(a: Number, b: Number) -> Number:
         >>> subtract(10.5, 2.5)
         8.0
     """
-    return a - b
+    try:
+        if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+            raise TypeError("Both arguments must be numbers (int or float)")
+
+        logger.info(f"Subtracting {b} from {a}")
+        return a - b
+    except Exception as e:
+        logger.error(f"Error in subtract function: {e}")
+        raise
 
 
 def multiply(a: Number, b: Number) -> Number:
