@@ -63,14 +63,8 @@ def subtract(a: Number, b: Number) -> Number:
         >>> subtract(10.5, 2.5)
         8.0
     """
-    try:
-        if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-            raise TypeError("Both arguments must be numbers (int or float)")
+    return a - b
 
-        return a - b
-    except Exception as e:
-        logger.error(f"Error in subtract function: {e}")
-        raise
 
 
 def multiply(a: Number, b: Number) -> Number:
