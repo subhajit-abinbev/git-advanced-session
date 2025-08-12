@@ -32,6 +32,9 @@ def add(a: Number, b: Number) -> Number:
         >>> add(2.5, 1.5)
         4.0
     """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Both arguments must be numbers (int or float)")
+    
     return a + b
 
 
