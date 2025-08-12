@@ -11,9 +11,12 @@ This module is used in the Git Advanced Session to demonstrate:
 
 import math
 from typing import Union
-
+import logging
 Number = Union[int, float]
 
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 def add(a: Number, b: Number) -> Number:
     """
@@ -32,6 +35,7 @@ def add(a: Number, b: Number) -> Number:
         >>> add(2.5, 1.5)
         4.0
     """
+    logger.info(f"Adding {a} and {b}")
     return a + b
 
 
