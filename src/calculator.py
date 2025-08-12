@@ -161,6 +161,7 @@ def square_root(number: Number) -> float:
     """
     if number < 0:
         raise ValueError("Cannot calculate square root of negative number")
+    logger.info(f"Calculating square root of {number}")
     return math.sqrt(number)
 
 
