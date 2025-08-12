@@ -137,6 +137,7 @@ def power(base: Number, exponent: Number) -> Number:
         >>> power(4, 0.5)
         2.0
     """
+    logger.info(f"Raising {base} to the power of {exponent}")
     return base ** exponent
 
 
