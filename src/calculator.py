@@ -83,6 +83,7 @@ def multiply(a: Number, b: Number) -> Number:
         >>> multiply(2.5, 4)
         10.0
     """
+    logger.info(f"Multiplying {a} and {b}")
     return a * b
 
 
