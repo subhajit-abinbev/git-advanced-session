@@ -63,6 +63,7 @@ def subtract(a: Number, b: Number) -> Number:
         >>> subtract(10.5, 2.5)
         8.0
     """
+    logger.info(f"Subtracting {a} from {b}")
     return a - b
 
 
