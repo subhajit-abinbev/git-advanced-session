@@ -67,7 +67,6 @@ def subtract(a: Number, b: Number) -> Number:
         if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
             raise TypeError("Both arguments must be numbers (int or float)")
 
-        logger.info(f"Subtracting {b} from {a}")
         return a - b
     except Exception as e:
         logger.error(f"Error in subtract function: {e}")
