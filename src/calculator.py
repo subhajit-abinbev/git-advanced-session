@@ -35,11 +35,15 @@ def add(a: Number, b: Number) -> Number:
         >>> add(2.5, 1.5)
         4.0
     """
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-        raise TypeError("Both arguments must be numbers (int or float)")
-    
-    logger.info(f"Adding {a} and {b}")
-    return a + b
+    try:
+        if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+            raise TypeError("Both arguments must be numbers (int or float)")
+        
+        logger.info(f"Adding {a} and {b}")
+        return a + b
+    except Exception as e:
+        logger.error(f"Error in add function: {e}")
+        raise
 
 
 def subtract(a: Number, b: Number) -> Number:
