@@ -5,6 +5,11 @@ Basic Setup
    conda create -n git-demo python=3.11 -y
    conda activate git-demo
 
+   or
+
+   py -3.11 -m venv git_essentials
+   .\git_essentials\Scripts\activate
+
 2. git clone https://github.com/subhajit-abinbev/git-advanced-session.git
    Change the path directory to git-advanced-session (press tab after cd)
    Create a branch in your local (git checkout -b <your-branch-name>)
