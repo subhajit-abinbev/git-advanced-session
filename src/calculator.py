@@ -180,7 +180,7 @@ def factorial(n: int) -> int:
     
     Args:
         n: Non-negative integer
-        
+        :q
     Returns:
         Factorial of n
         
